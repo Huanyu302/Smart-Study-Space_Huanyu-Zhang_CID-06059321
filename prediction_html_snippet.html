@@ -1,0 +1,77 @@
+<!-- ========================================
+     Prediction Section HTML Snippet
+     Insert this into your dashboard
+     ======================================== -->
+
+<!-- Add this after your existing chart section, before the closing </div> of container -->
+
+<!-- Prediction Section -->
+<div class="card" style="grid-column: 1 / -1;">
+    <div class="card-header">
+        <div class="card-icon" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+            <span style="font-size: 28px;">&#128302;</span>
+        </div>
+        <div style="flex: 1;">
+            <div class="card-title">Flow State Predictions</div>
+            <div style="font-size: 0.9em; color: #666; margin-top: 5px;">
+                AI-powered forecast of optimal study periods for next 24 hours
+            </div>
+        </div>
+    </div>
+    
+    <!-- Prediction Cards Container -->
+    <div id="predictionContainer">
+        <!-- Predictions will be dynamically inserted here -->
+        <div class="prediction-message info">
+            <div class="message-icon">LOAD</div>
+            <div class="message-content">
+                <strong>Initializing Prediction Engine</strong>
+                <p>Loading historical data and analyzing patterns. Please wait...</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Prediction Metadata -->
+    <div id="predictionMetadata">
+        <!-- Metadata will be dynamically inserted here -->
+    </div>
+</div>
+
+<!-- Prediction Algorithm Explanation Card -->
+<div class="card" style="grid-column: 1 / -1; background: #f8f9fa;">
+    <div style="padding: 10px;">
+        <h3 style="color: #333; margin-bottom: 15px; font-size: 1.2em;">
+            How Predictions Work
+        </h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+            <div>
+                <h4 style="color: #667eea; margin-bottom: 8px;">Data Collection</h4>
+                <p style="color: #666; font-size: 0.95em; line-height: 1.6;">
+                    System analyzes 7 days of historical data including noise levels, heart rate, 
+                    and HRV patterns. Minimum 100 data points required for reliable predictions.
+                </p>
+            </div>
+            <div>
+                <h4 style="color: #667eea; margin-bottom: 8px;">Pattern Recognition</h4>
+                <p style="color: #666; font-size: 0.95em; line-height: 1.6;">
+                    Algorithm identifies temporal patterns by grouping data into hourly time slots 
+                    for each day of the week, calculating flow state occurrence probability.
+                </p>
+            </div>
+            <div>
+                <h4 style="color: #667eea; margin-bottom: 8px;">Confidence Scoring</h4>
+                <p style="color: #666; font-size: 0.95em; line-height: 1.6;">
+                    Each prediction receives a confidence score based on sample size, pattern 
+                    consistency, and probability strength. Higher scores indicate more reliable forecasts.
+                </p>
+            </div>
+            <div>
+                <h4 style="color: #667eea; margin-bottom: 8px;">Flow State Criteria</h4>
+                <p style="color: #666; font-size: 0.95em; line-height: 1.6;">
+                    Optimal conditions: Noise below 55 dB, heart rate 60-80 BPM or high HRV 
+                    (RR interval above 700ms), indicating relaxed yet focused state.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
